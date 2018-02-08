@@ -56,12 +56,30 @@ def tendercomission():
 
 def additionally():
     try:
-        usAdd= driver.find_element_by_link_text("Дополнительно")
+        usAdd = driver.find_element_by_link_text("Дополнительно")
         usAdd.click()
         time.sleep(2)
     except Exception:
         print
 
+def additionallyEdit():
+      try:
+         usAdd = driver.find_element_by_link_text("Редактировать")
+         usAdd.click()
+         time.sleep(2)
+         editip = driver.find_element_by_id("comadditional-com_full_name")
+         
+         editip.clear()
+         time.sleep(2)
+         editip.send_keys("Leskhan")
+         time.sleep(4)
+         edit1 = driver.find_element_by_id("comadditional-first_man_fio")
+         edit1.clear()
+         time.sleep(3)
+         edit1.send_keys("Лесхан Каратаев")
+         edit1.send_keys(Keys.RETURN)
+      except Exception:
+         print
 #foradding bank rekvizit       
 '''def addBankRek():
     try:
@@ -82,6 +100,7 @@ openAddress()
 openbranch()
 tendercomission()
 additionally()
+additionallyEdit()
 
 
 
