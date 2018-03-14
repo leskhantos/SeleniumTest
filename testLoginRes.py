@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 import unittest
 driver = webdriver.Firefox()
 
-driver.get("https://dev.e-sauda.kz/login?entry_type=manual")
+driver.get("")
 class TestingDEV(unittest.TestCase):
  def LoginTo():
       comp = driver.find_element_by_id('loginform-email')
