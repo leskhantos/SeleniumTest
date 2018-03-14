@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import Select
 import unittest
 driver = webdriver.Firefox()
 
-driver.get("https://dev.e-sauda.kz/login?entry_type=manual")
+driver.get("")
 def LoginTo():
       comp = driver.find_element_by_id('loginform-email')
       comp.send_keys("user")
