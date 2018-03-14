@@ -4,7 +4,7 @@ import unittest
 class LoginTest(unittest.TestCase):
     def setUp(self):
         self.driver=webdriver.Firefox()
-        self.driver.get("https://dev.e-sauda.kz/ru/login?entry_type=manual")
+        self.driver.get("")
 
 def test_Login(self):
     driver = self.driver
