@@ -4,7 +4,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 driver = webdriver.Firefox()
-driver.get("https://dev.e-sauda.kz/")
+driver.get(")
 
 
 def test_auxilary():
