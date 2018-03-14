@@ -4,7 +4,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 driver = webdriver.Firefox()
-driver.get("https://demo.e-sauda.com/")
+driver.get()
 
 
 def test_search_in_python_org():
